@@ -139,3 +139,14 @@ if (!window.cartInitialized) {
         updateCartDisplay();
     });
 }
+
+// Automatically load the Premium AI Chat Widget globally
+document.addEventListener('DOMContentLoaded', () => {
+    // Prevent multiple injections
+    if (document.getElementById('ai-widget-container')) return;
+
+    const widgetScript = document.createElement('script');
+    widgetScript.src = 'ai_widget.js';
+    widgetScript.async = true;
+    document.body.appendChild(widgetScript);
+});

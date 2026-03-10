@@ -1,0 +1,14 @@
+name: pawpal_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - flask
+  - pymongo
+  - bcrypt
+  - python-dotenv
+  - flask-cors
+  - pip
+  - pip:
+      - google-generativeai
