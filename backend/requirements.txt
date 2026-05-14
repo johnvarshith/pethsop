@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pymongo
+PyJWT
+python-dotenv
+pydantic
+google-generativeai
+bcrypt
