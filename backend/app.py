@@ -20,7 +20,11 @@ app = FastAPI(title="PawPal API")
 # CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:5173",  # Local development
+        "http://127.0.0.1:5173",
+         "https://pethsop-v7s2.vercel.app"# Placeholder for your Vercel URL
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
